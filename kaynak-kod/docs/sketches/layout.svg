@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 1060" font-family="Segoe Print, Comic Sans MS, Bradley Hand, cursive" font-size="13" fill="#2b2620">
+  <!-- Frontend layout sketches for Between Doors. Every screen is the full browser window: the 3D street view
+       fills it and all UI is HTML/CSS (or SVG) laid over the canvas. -->
+  <style>
+    .screen { fill: #fbf7ef; stroke: #2b2620; stroke-width: 2; }
+    .world { fill: none; stroke: #b5a68a; stroke-width: 1.2; stroke-dasharray: 5 4; }
+    .box { fill: #fff; stroke: #2b2620; stroke-width: 1.6; }
+    .dark { fill: #4a4038; stroke: #2b2620; stroke-width: 1.4; }
+    .accent { fill: #f2a541; stroke: #2b2620; stroke-width: 1.4; }
+    .note { fill: #8c3b2a; font-size: 12px; }
+    .light { fill: #fbf7ef; }
+    .title { font-size: 18px; font-weight: bold; }
+    .arrow { stroke: #8c3b2a; stroke-width: 1.2; fill: none; marker-end: url(#tip); }
+  </style>
+  <defs>
+    <marker id="tip" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8c3b2a" />
+    </marker>
+  </defs>
+  <rect width="1300" height="1060" fill="#f3ead9" />
+  <text x="30" y="40" class="title" font-size="22">Between Doors: frontend layout sketches</text>
+  <text x="30" y="62" class="note">The 3D street (Babylon.js canvas) always fills the window; the dashed lines stand for it. Panels are HTML laid over it.</text>
+
+  <!-- 1. Main menu -->
+  <g transform="translate(30 90)">
+    <text x="0" y="-8" class="title">1. Main menu</text>
+    <rect class="screen" width="600" height="300" rx="6" />
+    <path class="world" d="M40 300 L250 40 M560 300 L350 40 M300 40 L300 300" />
+    <text x="14" y="28" font-weight="bold">Between Doors</text>
+    <text x="14" y="44" font-size="10">WASD walk · Shift run · E use · Tab task · H hint · M map · Esc</text>
+    <rect class="dark" x="14" y="52" width="54" height="18" rx="5" /><text x="22" y="65" class="light" font-size="10">English</text>
+    <rect class="dark" x="510" y="14" width="76" height="22" rx="6" /><text x="520" y="30" class="light" font-size="11">0 credits</text>
+    <rect class="box" x="170" y="80" width="260" height="170" rx="8" />
+    <text x="186" y="104" font-weight="bold">Between Doors</text>
+    <text x="186" y="122" font-size="11">A small neighbourhood. A courier's first week.</text>
+    <rect class="accent" x="186" y="134" width="228" height="28" rx="5" /><text x="198" y="153">Start shift / Continue</text>
+    <rect class="box" x="186" y="170" width="228" height="28" rx="5" /><text x="198" y="189">Chapters (replay, records)</text>
+    <rect class="box" x="186" y="206" width="228" height="28" rx="5" /><text x="198" y="225">Settings (language, music, graphics)</text>
+  </g>
+
+  <!-- 2. In-game HUD -->
+  <g transform="translate(670 90)">
+    <text x="0" y="-8" class="title">2. Playing: the HUD</text>
+    <rect class="screen" width="600" height="300" rx="6" />
+    <path class="world" d="M40 300 L250 40 M560 300 L350 40 M300 40 L300 300" />
+    <text x="14" y="28" font-weight="bold">Between Doors</text>
+    <text x="14" y="44" font-size="10">key help line</text>
+    <rect class="dark" x="14" y="52" width="54" height="18" rx="5" /><text x="22" y="65" class="light" font-size="10">English</text>
+    <rect class="dark" x="520" y="12" width="66" height="26" rx="6" /><text x="532" y="31" class="light" font-size="15">0:42</text>
+    <rect class="dark" x="510" y="44" width="76" height="22" rx="6" /><text x="520" y="60" class="light" font-size="11">120 credits</text>
+    <circle class="box" cx="548" cy="104" r="30" /><text x="530" y="108" font-size="10">compass</text>
+    <circle class="box" cx="540" cy="186" r="44" /><text x="514" y="190" font-size="10">minimap</text>
+    <rect class="dark" x="190" y="56" width="220" height="24" rx="6" /><text x="200" y="73" class="light" font-size="11">toast: "New delivery · Swift Parcel"</text>
+    <circle class="accent" cx="300" cy="200" r="14" /><text x="282" y="232" font-size="11">courier</text>
+    <rect class="dark" x="234" y="250" width="132" height="24" rx="6" /><text x="244" y="267" class="light" font-size="11">[E] Deliver parcel</text>
+    <path class="arrow" d="M470 30 L515 26" /><text x="372" y="26" class="note">mission clock</text>
+    <path class="arrow" d="M440 150 L500 170" /><text x="352" y="148" class="note">bought items only</text>
+    <path class="arrow" d="M410 282 L368 266" /><text x="414" y="290" class="note">appears near a door / person</text>
+  </g>
+
+  <!-- 3. Task panel -->
+  <g transform="translate(30 440)">
+    <text x="0" y="-8" class="title">3. Task panel (Tab)</text>
+    <rect class="screen" width="600" height="300" rx="6" />
+    <path class="world" d="M40 300 L250 40 M560 300 L350 40 M300 40 L300 300" />
+    <rect class="dark" x="520" y="12" width="66" height="26" rx="6" /><text x="532" y="31" class="light" font-size="15">0:57</text>
+    <rect class="dark" x="340" y="80" width="246" height="128" rx="8" />
+    <text x="354" y="104" class="light" font-weight="bold">Current task</text>
+    <text x="354" y="126" class="light" font-size="11" font-style="italic">"The stall at the top of Market Hill.</text>
+    <text x="354" y="141" class="light" font-size="11" font-style="italic">Straight there, no detours."</text>
+    <text x="354" y="166" font-size="11" fill="#f2a541">Press H for a hint (-50 points)</text>
+    <text x="354" y="190" class="light" font-size="10">board jobs in hand + their countdowns</text>
+    <path class="arrow" d="M200 150 L334 140" /><text x="40" y="140" class="note">the clock keeps running</text>
+    <text x="40" y="158" class="note">while the panel is open</text>
+  </g>
+
+  <!-- 4. Sketch map -->
+  <g transform="translate(670 440)">
+    <text x="0" y="-8" class="title">4. Sketch map (M), drawn from the GeoJSON</text>
+    <rect class="screen" width="600" height="300" rx="6" />
+    <rect class="dark" x="140" y="20" width="320" height="264" rx="8" />
+    <text x="154" y="42" class="light" font-weight="bold">Bellwick: sketch map</text>
+    <rect x="154" y="52" width="292" height="190" fill="#e8dcc4" stroke="#2b2620" />
+    <rect x="200" y="60" width="200" height="50" fill="#d8c9a8" stroke="#8c7f73" stroke-dasharray="4 3" /><text x="262" y="90" font-size="11">Dial Square</text>
+    <rect x="286" y="116" width="20" height="120" fill="#8c7f73" />
+    <rect x="232" y="150" width="44" height="26" fill="#c46a3a" stroke="#2b2620" /><text x="234" y="167" font-size="8">Bakery</text>
+    <rect x="232" y="196" width="44" height="28" fill="#7fae7f" stroke="#2b2620" /><text x="238" y="214" font-size="9">Relay</text>
+    <text x="168" y="180" font-size="26" fill="#8c7f73">?</text>
+    <text x="430" y="70" font-weight="bold">N</text>
+    <text x="154" y="262" class="light" font-size="10">no "you are here" (GPS item adds it) · drag, wheel, +/-</text>
+    <path class="arrow" d="M70 180 L176 176" /><text x="14" y="200" class="note">unvisited district</text>
+    <text x="14" y="216" class="note">stays blank</text>
+  </g>
+
+  <!-- 5. Note / dialog -->
+  <g transform="translate(30 790)">
+    <text x="0" y="-8" class="title">5. Parcel note and story dialogs</text>
+    <rect class="screen" width="600" height="250" rx="6" />
+    <path class="world" d="M40 250 L250 40 M560 250 L350 40" />
+    <rect class="box" x="130" y="50" width="340" height="160" rx="8" />
+    <text x="146" y="76" font-weight="bold">Mara · Relay</text>
+    <text x="146" y="100" font-size="11">"Blue door, directly opposite Ember Bakery.</text>
+    <text x="146" y="116" font-size="11">Look for the chilli plants."</text>
+    <rect class="accent" x="146" y="160" width="130" height="30" rx="5" /><text x="160" y="180">Take parcel</text>
+    <rect class="box" x="286" y="160" width="100" height="30" rx="5" /><text x="300" y="180">Not yet</text>
+    <path class="arrow" d="M520 120 L474 120" /><text x="482" y="104" class="note">clock</text>
+    <text x="482" y="138" class="note">starts here</text>
+  </g>
+
+  <!-- 6. Result -->
+  <g transform="translate(670 790)">
+    <text x="0" y="-8" class="title">6. Result: score and records</text>
+    <rect class="screen" width="600" height="250" rx="6" />
+    <rect class="box" x="150" y="20" width="300" height="214" rx="8" />
+    <text x="166" y="46" font-weight="bold">Delivered!</text>
+    <text x="166" y="70" font-size="11">Start ........................ 1000</text>
+    <text x="166" y="88" font-size="11">Wrong door (1) ................. -100</text>
+    <text x="166" y="106" font-size="11">Hints .......................... -50</text>
+    <text x="166" y="124" font-size="11">Base ............................ 850</text>
+    <text x="166" y="142" font-size="11">Time 0:48 (target 1:00) ........ +200</text>
+    <text x="166" y="164" font-weight="bold">Score ......................... 1050</text>
+    <text x="166" y="184" font-size="11" fill="#8c3b2a">New best score!  +100 credits</text>
+    <rect class="accent" x="166" y="196" width="100" height="28" rx="5" /><text x="186" y="215">Continue</text>
+    <path class="arrow" d="M520 150 L456 150" /><text x="470" y="134" class="note">best score + best time</text>
+    <text x="470" y="170" class="note">saved per chapter</text>
+  </g>
+</svg>

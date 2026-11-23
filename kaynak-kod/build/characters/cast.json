@@ -1,0 +1,44 @@
+{
+  "$comment": "Character kit for build/characters/convert.mjs. Keys = asset ids (models/chars/<id>.glb). 'colors' override UACP material colours (sRGB hex) on top of defaultColors; 'skin' picks a tone from skinTones (the pack's own skin is near-black, its eyes white). Story roles first, then townsfolk (F3).",
+  "source": "asset-inbox/UACP_Blends/Blends",
+  "animations": "Casual_Male.blend",
+  "defaultSkin": "medium",
+  "defaultColors": { "Face": "#2a211d" },
+  "skinTones": {
+    "light": "#f1c9a5",
+    "medium": "#d9a07a",
+    "tan": "#b9784f",
+    "brown": "#8d5a3b",
+    "dark": "#5e3a26"
+  },
+  "characters": {
+    "courier": { "blend": "Casual2_Male.blend", "colors": { "Shirt": "#3f8f5a" } },
+    "mara": { "blend": "Suit_Female.blend", "skin": "tan" },
+    "finn": { "blend": "Casual_Male.blend", "skin": "light", "colors": { "Shirt": "#c0392b" } },
+    "june": { "blend": "Casual_Female.blend", "skin": "brown", "colors": { "Shirt": "#d9a531" } },
+    "arthur": { "blend": "OldClassy_Male.blend", "skin": "light", "colors": { "Shirt": "#2c3e66" } },
+
+    "casual_m": { "blend": "Casual_Male.blend", "skin": "tan" },
+    "casual_f": { "blend": "Casual_Female.blend" },
+    "casual2_m": { "blend": "Casual2_Male.blend", "skin": "dark" },
+    "casual2_f": { "blend": "Casual2_Female.blend", "skin": "light" },
+    "casual3_m": { "blend": "Casual3_Male.blend", "skin": "brown" },
+    "casual3_f": { "blend": "Casual3_Female.blend", "skin": "tan" },
+    "casual_bald": { "blend": "Casual_Bald.blend", "skin": "light" },
+    "suit_m": { "blend": "Suit_Male.blend", "skin": "dark" },
+    "suit_f": { "blend": "Suit_Female.blend", "skin": "light" },
+    "chef_m": { "blend": "Chef_Male.blend" },
+    "chef_f": { "blend": "Chef_Female.blend", "skin": "brown" },
+    "doctor_m_old": { "blend": "Doctor_Male_Old.blend", "skin": "tan" },
+    "doctor_f_old": { "blend": "Doctor_Female_Old.blend", "skin": "light" },
+    "doctor_m_young": { "blend": "Doctor_Male_Young.blend", "skin": "brown" },
+    "doctor_f_young": { "blend": "Doctor_Female_Young.blend" },
+    "worker_m": { "blend": "Worker_Male.blend", "skin": "light" },
+    "worker_f": { "blend": "Worker_Female.blend", "skin": "dark" },
+    "oldclassy_m": { "blend": "OldClassy_Male.blend", "skin": "brown" },
+    "oldclassy_f": { "blend": "OldClassy_Female.blend", "skin": "light" },
+    "police_m": { "blend": "BlueSoldier_Male.blend" },
+    "police_f": { "blend": "BlueSoldier_Female.blend", "skin": "tan" },
+    "pug": { "blend": "Pug.blend", "skinMaterial": false }
+  }
+}

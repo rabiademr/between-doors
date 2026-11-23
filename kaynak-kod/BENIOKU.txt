@@ -1,0 +1,32 @@
+BETWEEN DOORS - GMT 458 Web GIS Dönem Projesi
+==============================================
+
+OYUNU AÇMAK
+  1. OYUN klasöründeki index.html dosyasına çift tıklayın.
+     (index.html, game.js ve packs/ klasörü yan yana durmalıdır; klasörü bölmeyin.)
+  2. Google Chrome veya Microsoft Edge önerilir.
+  Kurulum ve internet bağlantısı gerekmez. İlk açılışta modellerin yüklenmesi birkaç saniye sürebilir.
+
+KONTROLLER
+  W A S D / ok tuşları   Yürü (araçtayken sür)
+  Shift                  Koş
+  Fare                   Etrafa bak (oyuna tıklayınca fare yakalanır)
+  E                      Etkileşim: konuş, kapı, paket, araca bin / in
+  Tab                    Görev listesi
+  H                      İpucu
+  M                      Mahalle krokisi (sürükle: kaydır, tekerlek veya + / - : yakınlaştır, 0: ortala)
+  Esc                    Duraklat
+
+OYUN
+  Bellwick mahallesinde yeni bir kuryenin ilk haftası (5 gün). Her gün Relay ofisinde Mara'dan
+  hikâye görevini alın, panodan iş seçin; gün bitince Mara'da "Mesaiyi bitir" ile paydos edin.
+  Ayarlar menüsünden dil (Türkçe / English), fare hassasiyeti ve grafik kalitesi değiştirilebilir.
+  Yavaş bilgisayarda Grafik: "Düşük" seçin (Otomatik ayar bunu ilk saniyelerde kendisi dener).
+
+KLASÖRLER
+  OYUN/        Oynanabilir oyun (index.html + game.js + packs/)
+  kaynak-kod/  Kaynak kod (TypeScript, MVC yapısı) - README.md içinde açıklama var
+  rapor.pdf    Proje raporu
+
+KAYIT
+  İlerleme tarayıcının yerel deposunda (localStorage) tutulur, hiçbir veri dışarı gönderilmez.

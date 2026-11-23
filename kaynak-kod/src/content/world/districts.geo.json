@@ -1,0 +1,11 @@
+{
+  "type": "FeatureCollection",
+  "name": "Districts around the core (v2 F3)",
+  "features": [
+    {"type":"Feature","properties":{"layer":"district","id":"postmark-mews","name":"Postmark Mews","status":"active"},"geometry":{"type":"Polygon","coordinates":[[[-40,-20],[-20,-20],[-20,40],[-40,40],[-40,-20]]]}},
+    {"type":"Feature","properties":{"layer":"district","id":"market-hill","name":"Market Hill","status":"active","ground":"#bdb3a2"},"geometry":{"type":"Polygon","coordinates":[[[-40,40],[60,40],[60,120],[-40,120],[-40,40]]]}},
+    {"type":"Feature","properties":{"layer":"district","id":"canal-side","name":"Canal Side","status":"active","ground":"#b7b0a3"},"geometry":{"type":"Polygon","coordinates":[[[28,-60],[150,-60],[150,40],[28,40],[28,-60]]]}},
+    {"type":"Feature","properties":{"layer":"district","id":"railway-yard","name":"Railway Yard","status":"active","ground":"#a79c88"},"geometry":{"type":"Polygon","coordinates":[[[-40,-150],[28,-150],[28,-20],[-40,-20],[-40,-150]]]}},
+    {"type":"Feature","properties":{"layer":"district","id":"hillside-park","name":"Hillside Park","status":"active","ground":"#8fae6b"},"geometry":{"type":"Polygon","coordinates":[[[-150,-40],[-40,-40],[-40,120],[-150,120],[-150,-40]]]}}
+  ]
+}
